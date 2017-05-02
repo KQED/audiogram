@@ -20,5 +20,5 @@ WORKDIR /home/audiogram/audiogram
 
 # Install dependencies
 RUN npm install
-RUN sudo npm install pm2 -g
+RUN npm install pm2 -g
 
