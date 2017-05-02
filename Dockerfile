@@ -21,5 +21,3 @@ WORKDIR /home/audiogram/audiogram
 # Install dependencies
 RUN npm install
 
-# Run The Server
-RUN npm start -- 8080
