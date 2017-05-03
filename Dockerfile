@@ -12,7 +12,6 @@ RUN npm install -g pm2
 
 # Non-privileged user
 RUN useradd -m audiogram
-RUN chmod -R 777 /usr/local/lib
 USER audiogram
 WORKDIR /home/audiogram
 
