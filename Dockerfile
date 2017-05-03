@@ -8,6 +8,7 @@ ffmpeg \
 redis-server --yes
 
 RUN ln -s `which nodejs` /usr/bin/node
+RUN npm install -g pm2
 
 # Non-privileged user
 RUN useradd -m audiogram
@@ -21,4 +22,3 @@ WORKDIR /home/audiogram/audiogram
 
 # Install dependencies
 RUN npm install
-RUN npm install -g pm2
