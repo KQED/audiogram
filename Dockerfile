@@ -11,6 +11,7 @@ RUN ln -s `which nodejs` /usr/bin/node
 
 # Non-privileged user
 RUN useradd -m audiogram
+RUN chmod -R 777 /usr/bin/lib
 USER audiogram
 WORKDIR /home/audiogram
 
